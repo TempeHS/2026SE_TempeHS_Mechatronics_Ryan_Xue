@@ -56,11 +56,8 @@ class Wheels:
         #print('turn right')
 
 
-
-
 wheels = Wheels()
-
-wheels.turnleft()
-wheels.stop()
+while True:
+    wheels.forward()
 
 

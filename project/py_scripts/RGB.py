@@ -10,12 +10,9 @@ class RGBsensor:
         RGBSensor = self.__sensor.readHSV()
         hue = RGBSensor['hue']
         print(hue)
-        if 80 < hue < 95:
-            print('Green')
+        if 80 < hue < 95: 
+            return True
         else:
             print('No green')
         
 
-rgbsensor = RGBsensor()
-while True: 
-    rgbsensor.greenhue()

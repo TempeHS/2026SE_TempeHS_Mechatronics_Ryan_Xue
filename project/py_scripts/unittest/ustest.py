@@ -8,7 +8,8 @@ wheels = Wheels()
 
 while True:
     ultrasonic.print_distance()
+    wheels.forward()
     if ultrasonic.obstacleahead():
-        wheels.turnleft
-    else:
-        wheels.forward
+        wheels.turnleft()
+    
+    

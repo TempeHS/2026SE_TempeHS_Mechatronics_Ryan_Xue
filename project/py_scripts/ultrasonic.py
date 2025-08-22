@@ -36,20 +36,18 @@ class Ultrasonic:
         return side < 50
 
 
-ultrasonic = Ultrasonic()
-wheels = Wheels()
-def forward(self):
-        self.__Lwheel.set_duty(1800)
-        self.__Rwheel.set_duty(1200)
+
+
 
 #while True:
-#    #front, side = ultrasonic.distance()
- #   #print(f'{front}, {side}')
- #   ultrasonic.print_distance()
- #   if ultrasonic.obstacleahead():
- ###      if side_wall and front_clear:
-   ###          wheels.turnleft()
-  ###      wheels.forward()
+#    front, side = ultrasonic.distance()
+#    print(f'{front}, {side}')
+#    ultrasonic.print_distance()
+#    if ultrasonic.obstacleahead():
+#        if side_wall and front_clear:
+#            wheels.turnleft()
+#    else:
+#        wheels.forward()
 
     
     
