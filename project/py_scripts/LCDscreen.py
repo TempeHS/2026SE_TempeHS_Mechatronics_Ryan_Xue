@@ -2,6 +2,7 @@ from PiicoDev_SSD1306 import *
 from PiicoDev_Unified import sleep_ms
 from RGB import RGBsensor
 
+#Attempted to create LCD screen
 class LCD():
     def __init__ (self):
         self.__display = create_PiicoDev_SSD1306()
@@ -17,15 +18,8 @@ class LCD():
         self.__display.text('No colour',30,20, 1)
         self.__display.show()
 
+#Succesfully had LCD showing the functions
 lcdscreen = LCD()
 while True:
-    lcdscreen.LCDscreen       
+    lcdscreen.LCDscreen()       
 
-def LCDRGB(self):
-        if self.__rgb.greenhue():
-            self.__lcd.LCDscreen()
-            self.__wheels.stop()
-            time.sleep(1)
-            self.__wheels.forward()
-        else:
-            self.__lcd.LCDSCREEN()

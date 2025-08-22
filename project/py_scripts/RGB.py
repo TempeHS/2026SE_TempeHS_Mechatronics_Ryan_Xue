@@ -16,3 +16,4 @@ class RGBsensor:
             print('No green')
         
 
+#Succesfully had it working and showed when there was green paper

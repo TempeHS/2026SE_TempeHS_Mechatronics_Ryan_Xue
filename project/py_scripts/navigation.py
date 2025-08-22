@@ -1,11 +1,12 @@
 import time
 from machine import Pin, PWM
-from servo import Servo
 from mech import Wheels
 from ultrasonic import Ultrasonic
 from RGB import RGBsensor
 from LCDscreen import LCD
 
+#Created the main control system
+#navigation worked succesfully but couldnt get good video sorry sir
 class Navigate:
     def __init__(self):
             self.__wheels = Wheels()
@@ -26,7 +27,8 @@ class Navigate:
                 self.__wheels.turnleft()
         else:
             self.__wheels.forward()
-    
+
+#tried implementing the LCD and RGB but was not succesful
     def LCDRGB(self):
         if self.__rgb.greenhue():
             self.__lcd.LCDscreen()

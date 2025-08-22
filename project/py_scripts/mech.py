@@ -2,7 +2,7 @@ import time
 from machine import Pin, PWM
 from servo import Servo
 
-
+#Created the wheels 
 class Wheels:
     def __init__(self):
         self.LWheel_pin = PWM(Pin(16)) 
@@ -55,7 +55,11 @@ class Wheels:
         time.sleep(2.04)
         #print('turn right')
 
+#Turned some to documentation to remove them from the code as it was not working in combo with ultrasonic sensor
 
+
+
+#Tested the wheels her before having a proper unit test
 wheels = Wheels()
 while True:
     wheels.forward()

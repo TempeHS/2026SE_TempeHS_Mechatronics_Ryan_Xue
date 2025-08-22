@@ -4,6 +4,7 @@ from PiicoDev_VEML6040 import PiicoDev_VEML6040
 from RGB import RGBsensor
 from mech import Wheels
 
+#Couldnt get this properly workng which resulted in navigation in not working
 wheels = Wheels()
 rgbsensor = RGBsensor()
 while True: 
