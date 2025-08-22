@@ -6,6 +6,16 @@ class RGBsensor:
     def __init__(self):
         self.__sensor = PiicoDev_VEML6040()
 
-    def greenhue():
-        RGBSensor = self.__sensorPiicoDev_VEML6040
+    def greenhue(self):
+        RGBSensor = self.__sensor.readHSV()
+        hue = RGBSensor['hue']
+        print(hue)
+        if 80 < hue < 95:
+            print('Green')
+        else:
+            print('No green')
         
+
+rgbsensor = RGBsensor()
+while True: 
+    rgbsensor.greenhue()
